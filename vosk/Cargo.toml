@@ -1,0 +1,24 @@
+[package]
+name = "vosk"
+version = "0.2.0"
+edition = "2021"
+authors = ["Bear_03"]
+description = "Safe wrapper around the Vosk API Speech Recognition Toolkit"
+license = "MIT"
+repository = "https://github.com/Bear-03/vosk-rs"
+keywords = ["speech", "speech-to-text", "stt"]
+categories = ["api-bindings", "multimedia::audio"]
+
+[dependencies]
+vosk-sys = "0.1"
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+
+[dev-dependencies]
+# Dependencies for examples
+cpal = "0.14"
+dasp = "0.11"
+hound = "3.5"
+
+[features]
+cuda = []
